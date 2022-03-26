@@ -7,19 +7,21 @@ pilas.Agregar("dos");
 pilas.Agregar("tres");
 pilas.Agregar("cuatro");
 pilas.Agregar("cinco");
-Console.WriteLine(Pilas.Imprimir());
+Console.WriteLine(pilas.Imprimir());
 
-pilas.Eliminar();
-Console.WriteLine(pilas.Imprimir());
-pilas.Eliminar();
-Console.WriteLine(pilas.Imprimir());
-pilas.Eliminar();
-Console.WriteLine(pilas.Imprimir());
-pilas.Eliminar();
-Console.WriteLine(pilas.Imprimir());
-pilas.Eliminar();
-Console.WriteLine(pilas.Imprimir());
-pilas.Eliminar();
-Console.WriteLine(pilas.Imprimir());
-pilas.Eliminar();
-Console.WriteLine(pilas.Imprimir());
+for(int i= 0; i < 10; i++)
+{
+    try
+    {
+        Console.WriteLine("---------------------");
+        pilas.Eliminar();
+        Console.WriteLine(pilas.Imprimir());
+    }
+    catch (Exception ex)
+    {
+
+        Console.WriteLine(ex.Message);
+    }
+    
+
+}

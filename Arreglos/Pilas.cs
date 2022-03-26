@@ -48,33 +48,37 @@ namespace Arreglos
         }
         public void Eliminar()
         {
-            if (ValidaVacio()) {
+            if (ValidaVacio())
+            {
                 throw new Exception("Arreglo Vacio");
             }
             tope--;
             array[tope] = null;
 
         }
-     
-    }
-    public string Imprimir()
-    {
-        string datos = string.Empty;
-        if (ValidaLleno())
+
+
+        public string Imprimir()
         {
-            return "Arreglo Vacio";
-        }
-        for (int i = 0; i < tope; i++)
-        {
+            string datos = string.Empty;
+            if (ValidaLleno())
             {
-                if (i>0)
+                return "Arreglo Vacio";
             }
-            datos += $"[{i}] - {array[i]}";
+            for (int i = 0; i < tope; i++)
+            {
+
+                if (i > 0)
+                {
+                    datos += "\n";
+
+                }
+                datos += $"[{i}] - {array[i]}";
+            }
+            return datos;
         }
-        return datos;
+
     }
-        
-    }
-   
+}
 
 
