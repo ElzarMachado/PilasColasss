@@ -20,6 +20,6 @@ namespace Arreglos
             principio = 0;  
             final = 0;
         }
-
+        private bool ValidadaVacio();
     }
 }
