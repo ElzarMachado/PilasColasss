@@ -51,7 +51,7 @@ namespace Arreglos
             principio++;
         }
 
-        public String imprimir()
+        public String Imprimir()
         {
             string datos = string.Empty;
             if (ValidaVacio())

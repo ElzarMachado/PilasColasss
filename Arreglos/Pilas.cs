@@ -58,7 +58,7 @@ namespace Arreglos
         }
 
 
-        public string imprimir()
+        public string Imprimir()
         {
             string datos = "";
             if (ValidaLleno())

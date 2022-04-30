@@ -9,7 +9,7 @@ pilas.Agregar("dos");
 pilas.Agregar("tres");
 pilas.Agregar("cuatro");
 pilas.Agregar("cinco");
-Console.WriteLine(pilas.imprimir());
+Console.WriteLine(pilas.Imprimir());
 
 
 
@@ -40,14 +40,14 @@ colas.Agregar("dos");
 colas.Agregar("tres");
 colas.Agregar("cuatro");
 colas.Agregar("cinco");
-Console.WriteLine(colas.imprimir());
+Console.WriteLine(colas.Imprimir());
 for (int i = 0; i < 10; i++)
 {
     try
     {
         Console.WriteLine("--------------------------------");
         pilas.Eliminar();
-        Console.WriteLine(colas.imprimir());
+        Console.WriteLine(colas.Imprimir());
     }
     catch (Exception ex)
     {
