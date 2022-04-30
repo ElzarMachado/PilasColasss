@@ -41,7 +41,7 @@ namespace Listas
 
             }
             int contador = lista.Count;
-            for (int i = 0;i<lstCount; i++)
+            for (int i = 0;i< contador; i++)
             {
                 if (i > 0)
                 {

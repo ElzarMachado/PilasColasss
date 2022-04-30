@@ -8,7 +8,7 @@ namespace Listas
 {
     public class Pilas
     {
-        private List<string> list;
+        private List<string> lista;
         public Pilas()
         {
             list = new List<string>();
@@ -16,11 +16,11 @@ namespace Listas
 
         public void Agregar(string dato)
         {
-            list.Add(dato);
+            lista.Add(dato);
         }
         private bool ValidarVacio()
         {
-            return list.Count == 0;
+            return lista.Count == 0;
         }
    public void Eliminar()
         {

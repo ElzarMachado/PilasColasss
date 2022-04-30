@@ -58,9 +58,9 @@ namespace Arreglos
         }
 
 
-        public string Imprimir()
+        public string imprimir()
         {
-            string datos = string.Empty;
+            string datos = "";
             if (ValidaLleno())
             {
                 return "Arreglo Vacio";
