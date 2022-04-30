@@ -20,7 +20,8 @@ namespace Listas
         }
         private bool ValidarVacio()
         {
-            return lista.Count > 0;
+
+            return (lista.Count == 0);
         }
         public void Eliminar()
         {
@@ -32,26 +33,27 @@ namespace Listas
         }
         public string Imprimir()
         {
-            string datos = "";
+            string dato = string.Empty;
 
             if (ValidarVacio())
             {
                 return "Lista Vacia;";
 
             }
-            int lstCount = lista.Count;
+            int contador = lista.Count;
             for (int i = 0;i<lstCount; i++)
             {
                 if (i > 0)
                 {
-                    datos = "/n";
+                    dato = "/n";
                 }
+                dato += $"[{i}] - {lista[i]}";
             }
-
-            }
-
-          }
-
+            return dato;
         }
+    }
+}
+
+
     
 
